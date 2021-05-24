@@ -1,0 +1,37 @@
+.card {
+  margin: 15px 10px;
+  padding: 0;
+  border-radius: 16px;
+  background-color: red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card:nth-child(odd) {
+  grid-row-end: span 26;
+}
+
+.card:nth-child(even) {
+  grid-row-end: span 45;
+}
+
+.small {
+  grid-row-end: span 26;
+}
+
+.medium {
+  grid-row-end: span 33;
+}
+
+.large {
+  grid-row-end: span 45;
+}
